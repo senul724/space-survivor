@@ -1,11 +1,11 @@
 # Space Survivor
 A simple survival game built using java
 <hr>
-To enjoy the game, simply build using 
+Simply clone and execute script
 
-### `./gradlew build`
+### `./gradlew run`
 
-and start the game by running .jar file in the build/libs/ folder after building.
+to start the game.
 
 ## How to play
 Simply don't get hit by any meteo and collect as many satelites possibles.
