@@ -11,7 +11,7 @@ to start the game.
 Simply don't get hit by any meteo and collect as many satelites possibles.
 
 ### control keys
-`navigation` : `Cursor controls (Arrow keys)`
+`navigation` : `Cursor controls (Arrow keys)  &  W,A,S,D`
 <br>
 `pause` : `space`
 <br>
