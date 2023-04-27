@@ -190,7 +190,8 @@ public class GameFrame extends JFrame implements KeyListener, ActionListener {
     int yPos = shuttle.getY();
 
     switch (pressedkey) {
-      case 37:
+      // move left
+      case 37: // <-
         if (xPos <= 70 || over || paused) {
           return;
         }
@@ -200,7 +201,18 @@ public class GameFrame extends JFrame implements KeyListener, ActionListener {
 
         break;
 
-      case 39:
+      case 65: // a
+        if (xPos <= 70 || over || paused) {
+          return;
+        }
+
+        shuttleX = xPos - MOVE_SHIFT;
+        shuttle.setLocation(shuttleX, shuttleY);
+
+        break;
+
+      // move right
+      case 39: // ->
         if (xPos >= 600 || over || paused) {
           return;
         }
@@ -210,7 +222,18 @@ public class GameFrame extends JFrame implements KeyListener, ActionListener {
 
         break;
 
-      case 38:
+      case 68: // d
+        if (xPos >= 600 || over || paused) {
+          return;
+        }
+
+        shuttleX = xPos + MOVE_SHIFT;
+        shuttle.setLocation(shuttleX, shuttleY);
+
+        break;
+
+      // move up
+      case 38: // ^
         if (yPos <= 70 || over || paused) {
           return;
         }
@@ -220,7 +243,28 @@ public class GameFrame extends JFrame implements KeyListener, ActionListener {
 
         break;
 
-      case 40:
+      case 87: // w
+        if (yPos <= 70 || over || paused) {
+          return;
+        }
+
+        shuttleY = yPos - MOVE_SHIFT;
+        shuttle.setLocation(shuttleX, shuttleY);
+
+        break;
+
+      // move down
+      case 40: // v
+        if (yPos >= 600 || over || paused) {
+          return;
+        }
+
+        shuttleY = yPos + MOVE_SHIFT;
+        shuttle.setLocation(shuttleX, shuttleY);
+
+        break;
+
+      case 83: // s
         if (yPos >= 600 || over || paused) {
           return;
         }
