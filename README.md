@@ -1,7 +1,7 @@
 # Space Survivor
 A simple survival game built using java
 <hr>
-Simply clone and execute script
+Simply clone and execute script to run
 
 ### `./gradlew run`
 
