@@ -6,7 +6,7 @@ import java.io.FileReader;
 import java.io.FileWriter;
 
 public class Score {
-  public static int getHighScore()  {
+  public static int getHighScore() {
     try {
       BufferedReader reader = new BufferedReader(new FileReader("src/data/high-score.txt"));
       String data = reader.readLine();
